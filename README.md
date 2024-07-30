@@ -2,7 +2,7 @@
 
 Homulator is a cycle-accurate simulator tailored for Fully Homomorphic Encryption (FHE) accelerators. It offers detailed architectural runtime information during the execution of FHE applications, supporting extensive design space exploration across a variety of FHE parameters and hardware scales.
 
-**Note:** This simulator is currently under review, and this version is specifically intended for use by reviewers.
+<!-- **Note:** This simulator is currently under review, and this version is specifically intended for use by reviewers. -->
 
 # Building the Simulator
 
