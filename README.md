@@ -1,6 +1,6 @@
-# ForgeHomulator
+# Homulator
 
-ForgeHomulator is a cycle-accurate simulator tailored for Fully Homomorphic Encryption (FHE) accelerators. It offers detailed architectural runtime information during the execution of FHE applications, supporting extensive design space exploration across a variety of FHE parameters and hardware scales.
+Homulator is a cycle-accurate simulator tailored for Fully Homomorphic Encryption (FHE) accelerators. It offers detailed architectural runtime information during the execution of FHE applications, supporting extensive design space exploration across a variety of FHE parameters and hardware scales.
 
 **Note:** This simulator is currently under review, and this version is specifically intended for use by reviewers.
 
@@ -14,8 +14,8 @@ Ensure you have the following tools installed:
 ## Build Instructions
 Please note that this build process has been tested exclusively on the Linux platform.
 ```shell
-git clone https://github.com/FHE-ACCELE/ForgeHomulator.git
-cd ForgeHomulator
+git clone https://github.com/FHE-ACCELE/Homulator.git
+cd Homulator
 make -j
 ```
 
@@ -24,18 +24,18 @@ make -j
 ## Testing the Simulator
 To test the simulator, execute the following command with the appropriate parameters:
 ```shell
-./ForgeHomulator.run <configfile> <operationName> <maxExecutionLevel> <currentLevel> <alpha>
+./Homulator.run <configfile> <operationName> <maxExecutionLevel> <currentLevel> <alpha>
 ```
 
 For example, to perform a specific FHE operation:
 ```shell
-./ForgeHomulator.run ./config/config_4.cfg hmult 45 35 15
+./Homulator.run ./config/config_4.cfg hmult 45 35 15
 ```
 
 This example runs the `hmult` operation with a configuration for a simulation at N=65536 (as specified in `config_4.cfg`), indicating a maximum execution level of 45, a current level of 35, and an alpha value of 15.
 
 ## Using with the benchmark
-To evaluate the performance of the baseline accelerator, we provide several benchmark scripts in the [script directory](https://github.com/FHE-ACCELE/ForgeHomulator/tree/main/script). These scripts are designed to automate the testing process and provide consistent benchmarks across different configurations and operations. Use these scripts to systematically assess the simulator's performance and gather relevant metrics.
+To evaluate the performance of the baseline accelerator, we provide several benchmark scripts in the [script directory](https://github.com/FHE-ACCELE/Homulator/tree/main/script). These scripts are designed to automate the testing process and provide consistent benchmarks across different configurations and operations. Use these scripts to systematically assess the simulator's performance and gather relevant metrics.
 
 # Codebase
 This section provides an overview of the primary components within the project's repository, structured to support the development and benchmark testing of Fully Homomorphic Encryption (FHE) applications. The codebase is organized into several directories, each containing specific types of files that contribute to the overall functionality of the FHE framework. Below, we detail the purpose and content of each directory, emphasizing the structure and roles of different components crucial for anyone working with or contributing to the project.
@@ -87,5 +87,5 @@ To add new functionality you would have to:
 
 ## Contact
 
-For questions or additional information regarding this project, please submit your inquiries as an issue in the repository's [Issues](https://github.com/FHE-ACCELE/ForgeHomulator/issues) section. We welcome your feedback and contributions!
+For questions or additional information regarding this project, please submit your inquiries as an issue in the repository's [Issues](https://github.com/FHE-ACCELE/Homulator/issues) section. We welcome your feedback and contributions!
 
